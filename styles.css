@@ -30,10 +30,14 @@ body{
 	background-repeat: no-repeat;
 	background-color: hsl(193, 100%, 96%);
 }
-#top{
+#up{
 	width: 100%;
 	margin-bottom: 100px;
+	display: inline-block;
+	float: none;
+
 }
+
 #build{
 	padding-top: 20%;
 	padding-left: 34px;
@@ -77,9 +81,9 @@ p{
 
 }
 #mockUps{
-	padding-bottom: 10%;
+	margin: 0 auto;
 }
-.row{
+.middle{
 	display: flex;
 	box-shadow:0 0 5px;
 	margin-bottom: 50px;
@@ -130,10 +134,7 @@ ul{
 ul{
 	list-style-type: none;
 }
-.left {
- float: left;
- padding: 0 20px 20px 0;
-}
+
 .p2{
 	text-align: left;
 	margin-left: 10px;
@@ -151,6 +152,9 @@ ul{
 	margin-bottom: 5%;
 	padding-left: 5%;
 }
+.third{
+	list-style-image: url("images/icon-email.svg");
+}
 li{
 	padding-left: 10px;
 	margin-bottom: 10px;
@@ -166,7 +170,36 @@ li{
 }
 
 @media only screen and (min-width: 575px) {
-  #up{
+ #logo{
+ 	float: left;
+ }
+  .leftTop{
+
+ }
+
+  #jumbo{
+	height: 100%;
+	background: linear-gradient(to bottom, White 22.5%, hsl(192, 100%, 9%) 22.5%);
+	color: black;
+
+}
+
+@media only screen and (min-width: 576px ){
+#mockUps{
+	margin: 0 auto;
+}
+#jumbo{
+	height: 100%;
+	background: linear-gradient(to bottom, White 22.5%, hsl(192, 100%, 9%) 22.5%);
+	color: black;
+}
+
+
+
+}
+
+@media only screen and (min-width: 768px){
+	#up{
   	background-image: url("images/bg-hero-desktop.svg");
   	background-size: cover;
   	background-repeat: no-repeat;
@@ -176,42 +209,89 @@ li{
   	box-shadow: none;
   	margin: 0 auto;
   }
-  .left{
-  	order: 1;
-  	float: left;
-  	width: 50%;
-  	text-align: left;
-  	justify-content: center;
-  }
-  .left p{
-  	text-align: left;
-  	margin-left: 10%;
-  	padding-left: 0px;
-  }
-  .left h1{
-  	text-align: left;
-  	margin-left: 10%;
-  }
-  .right{
-  	order: 2;
-  	float: right;
-  	width: 50%;
-  	text-align: left;
-  	padding-top: 0px;
-  	padding-bottom: 0px;
+  
+	#jumbo{
+		height: 100%;
+		background: linear-gradient(to bottom, White 22%, hsl(192, 100%, 9%) 22%);
+		color: black;
+	}
+}
 
-  }
-  .right h1{
-  	text-align: left;
-  	margin-left: 10%;
-  }
-  .right p{
-  	text-align: left;
-  	margin-left: 10%;
-  	padding-left: 0px;
-  }
-  .bottom{
-  	
-  }
+@media only screen and (min-width: 992px){
 
+	#jumbo{
+		height: 100%;
+		background: linear-gradient(to bottom, White 21.85%, hsl(192, 100%, 9%) 21.85%);
+		color: black;
+	}
+	.row{
+		display: inline-block;
+	}
+	.left1{
+		order: 1;
+		float: left;
+		width: 50%;
+		margin-top: 10%;
+
+	}
+	.right1{
+		order: 2;
+		float: right;
+		width: 50%;
+		margin-top: 10%;
+	}
+	.left{
+		order: 1;
+		float: left;
+		width: 50%;
+		margin-top: 10%;
+
+	}
+	.right{
+		order: 2;
+		float: right;
+		width: 50%;
+		margin-top: 10%;
+	}
+	#two{
+		display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+	.col-lg-3{
+		display: inline-block;
+	}
+	.fourBottom{
+		order: 4;
+		float: right;
+	}
+
+}
+
+@media only screen and (min-width: 1200px){
+
+	#up{
+		width: 100%;
+	}
+	.left1{
+		order: 1;
+		float: left;
+		width: 50%;
+		margin-top: 10%;
+
+	}
+	.right1{
+		order: 2;
+		float: right;
+		width: 50%;
+		margin-top: 10%;
+	}
+	.row{
+		display: inline-block;
+	}
+	#jumbo{
+		height: 100%;
+		background: linear-gradient(to bottom, White 21.7%, hsl(192, 100%, 9%) 21.7%);
+		color: black;
+	}
 }
