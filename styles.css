@@ -35,6 +35,7 @@ body{
 	margin-bottom: 100px;
 	display: inline-block;
 	float: none;
+	padding-bottom: 100px;
 
 }
 
@@ -154,6 +155,9 @@ ul{
 }
 .third{
 	list-style-image: url("images/icon-email.svg");
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding-left: 5%;
 }
 li{
 	padding-left: 10px;
@@ -168,30 +172,53 @@ li{
 .row h1{
 	padding-top:10%;
 }
-
-@media only screen and (min-width: 575px) {
- #logo{
- 	float: left;
- }
-  .leftTop{
-
- }
-
-  #jumbo{
-	height: 100%;
-	background: linear-gradient(to bottom, White 22.5%, hsl(192, 100%, 9%) 22.5%);
-	color: black;
-
+.row{
+	display: inline-block;
 }
+.bottom{
+	color: black;
+}
+.icons{
+	color: white;
+}
+.jumbotron{
+	width: 80%;
+	margin: 0 auto;
+}
+h2{
+    text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;}
+
 
 @media only screen and (min-width: 576px ){
+	#logo{
+		float: left;
+	}
 #mockUps{
+	margin: 0 auto;
+}
+.jumbotron{
+	width: 90%;
 	margin: 0 auto;
 }
 #jumbo{
 	height: 100%;
-	background: linear-gradient(to bottom, White 22.5%, hsl(192, 100%, 9%) 22.5%);
+	background: linear-gradient(to bottom, White 47.75%, hsl(192, 100%, 9%) 47.75%);
 	color: black;
+}
+span{
+	display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+
+    border-radius: 25px;
+
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    border: solid 2px white;
 }
 
 
@@ -224,6 +251,7 @@ li{
 		background: linear-gradient(to bottom, White 21.85%, hsl(192, 100%, 9%) 21.85%);
 		color: black;
 	}
+
 	.row{
 		display: inline-block;
 	}
@@ -257,9 +285,18 @@ li{
 		display: flex;
         align-items: center;
         justify-content: center;
+        padding-bottom: 10%;
+        padding-top: 10%;
     }
 	.col-lg-3{
 		display: inline-block;
+	}
+	#footerLogo{
+		align-self: left;
+		text-align: left;
+	}
+	.oneBottom{
+		width: 40%;
 	}
 	.fourBottom{
 		order: 4;
