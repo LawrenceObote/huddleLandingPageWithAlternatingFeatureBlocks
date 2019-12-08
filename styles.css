@@ -199,7 +199,7 @@ h2{
 	margin: 0 auto;
 }
 .jumbotron{
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 }
 #jumbo{
@@ -236,7 +236,9 @@ span{
   	box-shadow: none;
   	margin: 0 auto;
   }
-  
+  .jumbotron{
+  	width: 70%;
+  }
 	#jumbo{
 		height: 100%;
 		background: linear-gradient(to bottom, White 22%, hsl(192, 100%, 9%) 22%);
@@ -245,7 +247,9 @@ span{
 }
 
 @media only screen and (min-width: 992px){
-
+	.jumbotron{
+		width: 70%;
+	}
 	#jumbo{
 		height: 100%;
 		background: linear-gradient(to bottom, White 21.85%, hsl(192, 100%, 9%) 21.85%);
