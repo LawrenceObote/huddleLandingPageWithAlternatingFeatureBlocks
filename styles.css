@@ -65,16 +65,18 @@ p{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	border: none;
-	box-shadow: 0 0 5px;
+	box-shadow: 10px 10px 5px gray;
 	pointer-events: pointer;
-	outline: none;
 	border-radius: 30px;
 	margin-bottom: 5%;
 	color: white;
 	height: 40px;
 	width: 300px;
-	justify-content: center
-
+	justify-content: center;
+	outline: none;
+}
+button:focus {
+	outline:0;
 }
 .img{
 	width: 100%;
@@ -231,10 +233,6 @@ span{
   	background-size: cover;
   	background-repeat: no-repeat;
   	background-color: hsl(193, 100%, 96%);
-  }
-  #topRow{
-  	box-shadow: none;
-  	margin: 0 auto;
   }
   .jumbotron{
   	width: 70%;
